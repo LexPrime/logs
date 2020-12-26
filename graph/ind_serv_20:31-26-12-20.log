@@ -1,0 +1,684 @@
+[2020-12-26 20:34:28.987 +0000] DEBUG (IndexerService/2751 on graph-indexer.darksiders-staking.com): Payload received
+    indexer: "0xBE9d7c691792937Ca7e2535652886ff390Cc5b86"
+    operator: "0xE35C249f495C563E42D5822985158825Eb37e61e"
+    component: "ReceiptManager"
+    states: [
+      {
+        "channel": "0xf290e5a86f7a5310e9b5672f3ba8ce28b1f72d5d9118d3a65373faa7187bf052",
+        "nonce": 73437,
+        "turnNum": 0
+      },
+      {
+        "channel": "0xe81383e44ffa5def86c43b95b7260e7db720b1325d146dd8e7940e5e263aa3b5",
+        "nonce": 73442,
+        "turnNum": 0
+      },
+      {
+        "channel": "0xcdbcd48ac676eed076eed50f9838ddcc34d8d0548f988d0488369ff1987f0642",
+        "nonce": 73440,
+        "turnNum": 0
+      },
+      {
+        "channel": "0xb0bb44d5ad08aedb343b91fc0eafd0ec9d7897a1cb7fcf74c73946e780b9b1fd",
+        "nonce": 73446,
+        "turnNum": 0
+      },
+      {
+        "channel": "0xa36aee36464d44b502ae09a246343f6a4e385e39d4431359ee472926d07c99c3",
+        "nonce": 73444,
+        "turnNum": 0
+      },
+      {
+        "channel": "0x9477cb9c0e5d18196ca8c8398196e14cee8f453cd42bcb27b14b7d6aa2331c0d",
+        "nonce": 73445,
+        "turnNum": 0
+      },
+      {
+        "channel": "0x88f48231eef103455d5fb4b5da590658e78f29d0a976269997b346c122931f25",
+        "nonce": 73439,
+        "turnNum": 0
+      },
+      {
+        "channel": "0x655ac663ea5ee7614a659f1f5ae3e23e4996248aaf8ca3c0b7927cfff10e69fe",
+        "nonce": 73441,
+        "turnNum": 0
+      },
+      {
+        "channel": "0x1c3d8a5434c53e6b05c82457c186202c7c3dd22859a20d24f2631460295c49bb",
+        "nonce": 73438,
+        "turnNum": 0
+      },
+      {
+        "channel": "0x18f2c561ea537ed4333daa622b45aa2c98daddf6aaf72f613a8753665d9a936b",
+        "nonce": 73443,
+        "turnNum": 0
+      }
+    ]
+    objectives: [
+      {
+        "type": "OpenChannel",
+        "fundingStrategy": "Fake",
+        "targetChannelId": "0xf290e5a86f7a5310e9b5672f3ba8ce28b1f72d5d9118d3a65373faa7187bf052",
+        "role": "app"
+      },
+      {
+        "type": "OpenChannel",
+        "fundingStrategy": "Fake",
+        "targetChannelId": "0x88f48231eef103455d5fb4b5da590658e78f29d0a976269997b346c122931f25",
+        "role": "app"
+      },
+      {
+        "type": "OpenChannel",
+        "fundingStrategy": "Fake",
+        "targetChannelId": "0xe81383e44ffa5def86c43b95b7260e7db720b1325d146dd8e7940e5e263aa3b5",
+        "role": "app"
+      },
+      {
+        "type": "OpenChannel",
+        "fundingStrategy": "Fake",
+        "targetChannelId": "0x655ac663ea5ee7614a659f1f5ae3e23e4996248aaf8ca3c0b7927cfff10e69fe",
+        "role": "app"
+      },
+      {
+        "type": "OpenChannel",
+        "fundingStrategy": "Fake",
+        "targetChannelId": "0x9477cb9c0e5d18196ca8c8398196e14cee8f453cd42bcb27b14b7d6aa2331c0d",
+        "role": "app"
+      },
+      {
+        "type": "OpenChannel",
+        "fundingStrategy": "Fake",
+        "targetChannelId": "0x18f2c561ea537ed4333daa622b45aa2c98daddf6aaf72f613a8753665d9a936b",
+        "role": "app"
+      },
+      {
+        "type": "OpenChannel",
+        "fundingStrategy": "Fake",
+        "targetChannelId": "0x1c3d8a5434c53e6b05c82457c186202c7c3dd22859a20d24f2631460295c49bb",
+        "role": "app"
+      },
+      {
+        "type": "OpenChannel",
+        "fundingStrategy": "Fake",
+        "targetChannelId": "0xa36aee36464d44b502ae09a246343f6a4e385e39d4431359ee472926d07c99c3",
+        "role": "app"
+      },
+      {
+        "type": "OpenChannel",
+        "fundingStrategy": "Fake",
+        "targetChannelId": "0xb0bb44d5ad08aedb343b91fc0eafd0ec9d7897a1cb7fcf74c73946e780b9b1fd",
+        "role": "app"
+      },
+      {
+        "type": "OpenChannel",
+        "fundingStrategy": "Fake",
+        "targetChannelId": "0xcdbcd48ac676eed076eed50f9838ddcc34d8d0548f988d0488369ff1987f0642",
+        "role": "app"
+      }
+    ]
+[2020-12-26 20:34:28.997 +0000] ERROR (2751 on graph-indexer.darksiders-staking.com): Error during pushMessage
+    dbName: "mainnet_indexer1"
+    walletVersion: "@statechannels/server-wallet@1.13.1"
+    err: {
+      "type": "StoreError",
+      "message": "Not in channel",
+      "stack":
+          Error: Not in channel
+              at createChannel (/home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/node_modules/@statechannels/server-wallet/lib/src/wallet/store.js:434:15)
+              at runMicrotasks (<anonymous>)
+              at processTicksAndRejections (internal/process/task_queues.js:93:5)
+              at async Store.addSignedState (/home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/node_modules/@statechannels/server-wallet/lib/src/wallet/store.js:337:14)
+              at async /home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/node_modules/@statechannels/server-wallet/lib/src/wallet/store.js:184:33
+      "reason": "Not in channel"
+    }
+[2020-12-26 20:34:28.998 +0000] ERROR (IndexerService/2751 on graph-indexer.darksiders-staking.com): Failed to handle state channel message
+    indexer: "0xBE9d7c691792937Ca7e2535652886ff390Cc5b86"
+    operator: "0xE35C249f495C563E42D5822985158825Eb37e61e"
+    component: "Server"
+    body: {
+      "walletVersion": "@statechannels/server-wallet@1.13.1",
+      "signedStates": [
+        {
+          "chainId": "0x04",
+          "participants": [
+            {
+              "participantId": "0xEB003efc64269095A71D90078E5b1475917e599a",
+              "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+              "signingAddress": "0xEB003efc64269095A71D90078E5b1475917e599a"
+            },
+            {
+              "participantId": "http://104.238.222.165/",
+              "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+              "signingAddress": "0x12aAD62c5F264b988118a972F27e3529C86792D6"
+            }
+          ],
+          "channelNonce": 73437,
+          "appDefinition": "0x02cbecbEE7Ad3f74d95b50755C26a16534F53C1A",
+          "challengeDuration": 9001,
+          "turnNum": 0,
+          "appData": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE4100000000000000000000000021356559950bA30b177aF81e9e5EB1bE9244ba4c955c43af17f04c78776ab7f93e2550563129b62cf15d0ff4db2a49ee9f5158bd00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+          "isFinal": false,
+          "outcome": [
+            {
+              "assetHolderAddress": "0xE2b30B251E74bF33e5d8F795b576292c135E8a89",
+              "allocationItems": [
+                {
+                  "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+                  "amount": "0x00000000000000000000000000000000000000000000d3c21bcecceda1000000"
+                },
+                {
+                  "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+                  "amount": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                }
+              ]
+            }
+          ],
+          "channelId": "0xf290e5a86f7a5310e9b5672f3ba8ce28b1f72d5d9118d3a65373faa7187bf052",
+          "signatures": [
+            "0xc985b51fd1a70e1cfd32cee5f621c7c36c8bf4585617860d6231183ee7c3b3594456d72d5ca14da79621a038dc6bce8db7367413ad4339461a57b5f531b3a23b1b"
+          ]
+        },
+        {
+          "chainId": "0x04",
+          "participants": [
+            {
+              "participantId": "0xEB003efc64269095A71D90078E5b1475917e599a",
+              "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+              "signingAddress": "0xEB003efc64269095A71D90078E5b1475917e599a"
+            },
+            {
+              "participantId": "http://104.238.222.165/",
+              "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+              "signingAddress": "0x12aAD62c5F264b988118a972F27e3529C86792D6"
+            }
+          ],
+          "channelNonce": 73442,
+          "appDefinition": "0x02cbecbEE7Ad3f74d95b50755C26a16534F53C1A",
+          "challengeDuration": 9001,
+          "turnNum": 0,
+          "appData": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE4100000000000000000000000021356559950bA30b177aF81e9e5EB1bE9244ba4c955c43af17f04c78776ab7f93e2550563129b62cf15d0ff4db2a49ee9f5158bd00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+          "isFinal": false,
+          "outcome": [
+            {
+              "assetHolderAddress": "0xE2b30B251E74bF33e5d8F795b576292c135E8a89",
+              "allocationItems": [
+                {
+                  "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+                  "amount": "0x00000000000000000000000000000000000000000000d3c21bcecceda1000000"
+                },
+                {
+                  "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+                  "amount": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                }
+              ]
+            }
+          ],
+          "channelId": "0xe81383e44ffa5def86c43b95b7260e7db720b1325d146dd8e7940e5e263aa3b5",
+          "signatures": [
+            "0x476fe5f289541c8e48827c6a11ba8ea475214353d6f18ce8256ad6fc11d7e219250e6e34123112e73ab9475f188bb449ffc99e12593241cdcbb6b63f0c89938a1c"
+          ]
+        },
+        {
+          "chainId": "0x04",
+          "participants": [
+            {
+              "participantId": "0xEB003efc64269095A71D90078E5b1475917e599a",
+              "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+              "signingAddress": "0xEB003efc64269095A71D90078E5b1475917e599a"
+            },
+            {
+              "participantId": "http://104.238.222.165/",
+              "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+              "signingAddress": "0x12aAD62c5F264b988118a972F27e3529C86792D6"
+            }
+          ],
+          "channelNonce": 73440,
+          "appDefinition": "0x02cbecbEE7Ad3f74d95b50755C26a16534F53C1A",
+          "challengeDuration": 9001,
+          "turnNum": 0,
+          "appData": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE4100000000000000000000000021356559950bA30b177aF81e9e5EB1bE9244ba4c955c43af17f04c78776ab7f93e2550563129b62cf15d0ff4db2a49ee9f5158bd00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+          "isFinal": false,
+          "outcome": [
+            {
+              "assetHolderAddress": "0xE2b30B251E74bF33e5d8F795b576292c135E8a89",
+              "allocationItems": [
+                {
+                  "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+                  "amount": "0x00000000000000000000000000000000000000000000d3c21bcecceda1000000"
+                },
+                {
+                  "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+                  "amount": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                }
+              ]
+            }
+          ],
+          "channelId": "0xcdbcd48ac676eed076eed50f9838ddcc34d8d0548f988d0488369ff1987f0642",
+          "signatures": [
+            "0x4fc2fc611d417107cb4db0c948a380767b48af8473862d6f59952c24780a73dc4b46e1a8e33b9b866f5554b3281e9e6eed2d6f2d48c38f48f854a68cf7034e171b"
+          ]
+        },
+        {
+          "chainId": "0x04",
+          "participants": [
+            {
+              "participantId": "0xEB003efc64269095A71D90078E5b1475917e599a",
+              "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+              "signingAddress": "0xEB003efc64269095A71D90078E5b1475917e599a"
+            },
+            {
+              "participantId": "http://104.238.222.165/",
+              "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+              "signingAddress": "0x12aAD62c5F264b988118a972F27e3529C86792D6"
+            }
+          ],
+          "channelNonce": 73446,
+          "appDefinition": "0x02cbecbEE7Ad3f74d95b50755C26a16534F53C1A",
+          "challengeDuration": 9001,
+          "turnNum": 0,
+          "appData": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE4100000000000000000000000021356559950bA30b177aF81e9e5EB1bE9244ba4c955c43af17f04c78776ab7f93e2550563129b62cf15d0ff4db2a49ee9f5158bd00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+          "isFinal": false,
+          "outcome": [
+            {
+              "assetHolderAddress": "0xE2b30B251E74bF33e5d8F795b576292c135E8a89",
+              "allocationItems": [
+                {
+                  "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+                  "amount": "0x00000000000000000000000000000000000000000000d3c21bcecceda1000000"
+                },
+                {
+                  "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+                  "amount": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                }
+              ]
+            }
+          ],
+          "channelId": "0xb0bb44d5ad08aedb343b91fc0eafd0ec9d7897a1cb7fcf74c73946e780b9b1fd",
+          "signatures": [
+            "0x3d6366d7915f2f16ef20fe6fed150f67e0b15aa26c8d73e41ba694c4964d66b35a570b2a5b84518db47d6d416c4768fba395a18aeb14a008a23f9575fb3d61231c"
+          ]
+        },
+        {
+          "chainId": "0x04",
+          "participants": [
+            {
+              "participantId": "0xEB003efc64269095A71D90078E5b1475917e599a",
+              "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+              "signingAddress": "0xEB003efc64269095A71D90078E5b1475917e599a"
+            },
+            {
+              "participantId": "http://104.238.222.165/",
+              "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+              "signingAddress": "0x12aAD62c5F264b988118a972F27e3529C86792D6"
+            }
+          ],
+          "channelNonce": 73444,
+          "appDefinition": "0x02cbecbEE7Ad3f74d95b50755C26a16534F53C1A",
+          "challengeDuration": 9001,
+          "turnNum": 0,
+          "appData": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE4100000000000000000000000021356559950bA30b177aF81e9e5EB1bE9244ba4c955c43af17f04c78776ab7f93e2550563129b62cf15d0ff4db2a49ee9f5158bd00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+          "isFinal": false,
+          "outcome": [
+            {
+              "assetHolderAddress": "0xE2b30B251E74bF33e5d8F795b576292c135E8a89",
+              "allocationItems": [
+                {
+                  "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+                  "amount": "0x00000000000000000000000000000000000000000000d3c21bcecceda1000000"
+                },
+                {
+                  "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+                  "amount": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                }
+              ]
+            }
+          ],
+          "channelId": "0xa36aee36464d44b502ae09a246343f6a4e385e39d4431359ee472926d07c99c3",
+          "signatures": [
+            "0xc2e933aa0643b5f78ab3f81c882dbcad8ca91316a76121de48b90a5363cb76547eb198d94301c0cbc515cb3bb00f3d35d543cfb7a1cff738a0860ff32a4457af1c"
+          ]
+        },
+        {
+          "chainId": "0x04",
+          "participants": [
+            {
+              "participantId": "0xEB003efc64269095A71D90078E5b1475917e599a",
+              "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+              "signingAddress": "0xEB003efc64269095A71D90078E5b1475917e599a"
+            },
+            {
+              "participantId": "http://104.238.222.165/",
+              "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+              "signingAddress": "0x12aAD62c5F264b988118a972F27e3529C86792D6"
+            }
+          ],
+          "channelNonce": 73445,
+          "appDefinition": "0x02cbecbEE7Ad3f74d95b50755C26a16534F53C1A",
+          "challengeDuration": 9001,
+          "turnNum": 0,
+          "appData": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE4100000000000000000000000021356559950bA30b177aF81e9e5EB1bE9244ba4c955c43af17f04c78776ab7f93e2550563129b62cf15d0ff4db2a49ee9f5158bd00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+          "isFinal": false,
+          "outcome": [
+            {
+              "assetHolderAddress": "0xE2b30B251E74bF33e5d8F795b576292c135E8a89",
+              "allocationItems": [
+                {
+                  "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+                  "amount": "0x00000000000000000000000000000000000000000000d3c21bcecceda1000000"
+                },
+                {
+                  "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+                  "amount": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                }
+              ]
+            }
+          ],
+          "channelId": "0x9477cb9c0e5d18196ca8c8398196e14cee8f453cd42bcb27b14b7d6aa2331c0d",
+          "signatures": [
+            "0x74894874dd40cc231873c6219c028bf48135a7e0bc854ab95744121243d6acb06210be0e3ee3fbdbbbff9ec9c18c899908b00cb7a6b6cc51aa835529f7af96331c"
+          ]
+        },
+        {
+          "chainId": "0x04",
+          "participants": [
+            {
+              "participantId": "0xEB003efc64269095A71D90078E5b1475917e599a",
+              "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+              "signingAddress": "0xEB003efc64269095A71D90078E5b1475917e599a"
+            },
+            {
+              "participantId": "http://104.238.222.165/",
+              "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+              "signingAddress": "0x12aAD62c5F264b988118a972F27e3529C86792D6"
+            }
+          ],
+          "channelNonce": 73439,
+          "appDefinition": "0x02cbecbEE7Ad3f74d95b50755C26a16534F53C1A",
+          "challengeDuration": 9001,
+          "turnNum": 0,
+          "appData": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE4100000000000000000000000021356559950bA30b177aF81e9e5EB1bE9244ba4c955c43af17f04c78776ab7f93e2550563129b62cf15d0ff4db2a49ee9f5158bd00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+          "isFinal": false,
+          "outcome": [
+            {
+              "assetHolderAddress": "0xE2b30B251E74bF33e5d8F795b576292c135E8a89",
+              "allocationItems": [
+                {
+                  "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+                  "amount": "0x00000000000000000000000000000000000000000000d3c21bcecceda1000000"
+                },
+                {
+                  "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+                  "amount": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                }
+              ]
+            }
+          ],
+          "channelId": "0x88f48231eef103455d5fb4b5da590658e78f29d0a976269997b346c122931f25",
+          "signatures": [
+            "0x8faf066f6c03a64ce656d68bc8e3077d3e81da209891ccaeeac33e75cf95a82c13f134a21055795e50575287d6a032af89a89624df03dc271a02dbfc296e85de1c"
+          ]
+        },
+        {
+          "chainId": "0x04",
+          "participants": [
+            {
+              "participantId": "0xEB003efc64269095A71D90078E5b1475917e599a",
+              "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+              "signingAddress": "0xEB003efc64269095A71D90078E5b1475917e599a"
+            },
+            {
+              "participantId": "http://104.238.222.165/",
+              "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+              "signingAddress": "0x12aAD62c5F264b988118a972F27e3529C86792D6"
+            }
+          ],
+          "channelNonce": 73441,
+          "appDefinition": "0x02cbecbEE7Ad3f74d95b50755C26a16534F53C1A",
+          "challengeDuration": 9001,
+          "turnNum": 0,
+          "appData": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE4100000000000000000000000021356559950bA30b177aF81e9e5EB1bE9244ba4c955c43af17f04c78776ab7f93e2550563129b62cf15d0ff4db2a49ee9f5158bd00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+          "isFinal": false,
+          "outcome": [
+            {
+              "assetHolderAddress": "0xE2b30B251E74bF33e5d8F795b576292c135E8a89",
+              "allocationItems": [
+                {
+                  "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+                  "amount": "0x00000000000000000000000000000000000000000000d3c21bcecceda1000000"
+                },
+                {
+                  "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+                  "amount": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                }
+              ]
+            }
+          ],
+          "channelId": "0x655ac663ea5ee7614a659f1f5ae3e23e4996248aaf8ca3c0b7927cfff10e69fe",
+          "signatures": [
+            "0xc5db81477cadb6f335ae3cb07e5ddf9ee3dfbb4aeef35d74393077c26c4123970588f072fefe4c656ae41fc2a2b4e0f4d7f718f3b6b239a7b817ac4b66b25e3c1c"
+          ]
+        },
+        {
+          "chainId": "0x04",
+          "participants": [
+            {
+              "participantId": "0xEB003efc64269095A71D90078E5b1475917e599a",
+              "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+              "signingAddress": "0xEB003efc64269095A71D90078E5b1475917e599a"
+            },
+            {
+              "participantId": "http://104.238.222.165/",
+              "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+              "signingAddress": "0x12aAD62c5F264b988118a972F27e3529C86792D6"
+            }
+          ],
+          "channelNonce": 73438,
+          "appDefinition": "0x02cbecbEE7Ad3f74d95b50755C26a16534F53C1A",
+          "challengeDuration": 9001,
+          "turnNum": 0,
+          "appData": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE4100000000000000000000000021356559950bA30b177aF81e9e5EB1bE9244ba4c955c43af17f04c78776ab7f93e2550563129b62cf15d0ff4db2a49ee9f5158bd00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+          "isFinal": false,
+          "outcome": [
+            {
+              "assetHolderAddress": "0xE2b30B251E74bF33e5d8F795b576292c135E8a89",
+              "allocationItems": [
+                {
+                  "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+                  "amount": "0x00000000000000000000000000000000000000000000d3c21bcecceda1000000"
+                },
+                {
+                  "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+                  "amount": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                }
+              ]
+            }
+          ],
+          "channelId": "0x1c3d8a5434c53e6b05c82457c186202c7c3dd22859a20d24f2631460295c49bb",
+          "signatures": [
+            "0x4e7f8dfe83c474221fcba766cb7b04e0bdbd0c109ba884571c8d1f22cbf56ab36a693ecae23074f9fb206b5de711a39a179ea38638fe238d9f5b687ccf677ad51c"
+          ]
+        },
+        {
+          "chainId": "0x04",
+          "participants": [
+            {
+              "participantId": "0xEB003efc64269095A71D90078E5b1475917e599a",
+              "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+              "signingAddress": "0xEB003efc64269095A71D90078E5b1475917e599a"
+            },
+            {
+              "participantId": "http://104.238.222.165/",
+              "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+              "signingAddress": "0x12aAD62c5F264b988118a972F27e3529C86792D6"
+            }
+          ],
+          "channelNonce": 73443,
+          "appDefinition": "0x02cbecbEE7Ad3f74d95b50755C26a16534F53C1A",
+          "challengeDuration": 9001,
+          "turnNum": 0,
+          "appData": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000004000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE4100000000000000000000000021356559950bA30b177aF81e9e5EB1bE9244ba4c955c43af17f04c78776ab7f93e2550563129b62cf15d0ff4db2a49ee9f5158bd00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+          "isFinal": false,
+          "outcome": [
+            {
+              "assetHolderAddress": "0xE2b30B251E74bF33e5d8F795b576292c135E8a89",
+              "allocationItems": [
+                {
+                  "destination": "0x000000000000000000000000aa7463ba7bCCD8d9605E7c9249252bD44f8A7f35",
+                  "amount": "0x00000000000000000000000000000000000000000000d3c21bcecceda1000000"
+                },
+                {
+                  "destination": "0x000000000000000000000000242fbE43572f464484e6911d7E9E76dA2145dE41",
+                  "amount": "0x0000000000000000000000000000000000000000000000000000000000000000"
+                }
+              ]
+            }
+          ],
+          "channelId": "0x18f2c561ea537ed4333daa622b45aa2c98daddf6aaf72f613a8753665d9a936b",
+          "signatures": [
+            "0x02e513e9fa8de1b51bf83be461edc74ded64839d7a23f0e2022a9bab34f1850b2d664ca528d358879016dcbba8ee48fbb7afab916041f3e9ffff003c18aee2011c"
+          ]
+        }
+      ],
+      "objectives": [
+        {
+          "participants": [],
+          "type": "OpenChannel",
+          "data": {
+            "fundingStrategy": "Fake",
+            "targetChannelId": "0xf290e5a86f7a5310e9b5672f3ba8ce28b1f72d5d9118d3a65373faa7187bf052",
+            "role": "app"
+          }
+        },
+        {
+          "participants": [],
+          "type": "OpenChannel",
+          "data": {
+            "fundingStrategy": "Fake",
+            "targetChannelId": "0x88f48231eef103455d5fb4b5da590658e78f29d0a976269997b346c122931f25",
+            "role": "app"
+          }
+        },
+        {
+          "participants": [],
+          "type": "OpenChannel",
+          "data": {
+            "fundingStrategy": "Fake",
+            "targetChannelId": "0xe81383e44ffa5def86c43b95b7260e7db720b1325d146dd8e7940e5e263aa3b5",
+            "role": "app"
+          }
+        },
+        {
+          "participants": [],
+          "type": "OpenChannel",
+          "data": {
+            "fundingStrategy": "Fake",
+            "targetChannelId": "0x655ac663ea5ee7614a659f1f5ae3e23e4996248aaf8ca3c0b7927cfff10e69fe",
+            "role": "app"
+          }
+        },
+        {
+          "participants": [],
+          "type": "OpenChannel",
+          "data": {
+            "fundingStrategy": "Fake",
+            "targetChannelId": "0x9477cb9c0e5d18196ca8c8398196e14cee8f453cd42bcb27b14b7d6aa2331c0d",
+            "role": "app"
+          }
+        },
+        {
+          "participants": [],
+          "type": "OpenChannel",
+          "data": {
+            "fundingStrategy": "Fake",
+            "targetChannelId": "0x18f2c561ea537ed4333daa622b45aa2c98daddf6aaf72f613a8753665d9a936b",
+            "role": "app"
+          }
+        },
+        {
+          "participants": [],
+          "type": "OpenChannel",
+          "data": {
+            "fundingStrategy": "Fake",
+            "targetChannelId": "0x1c3d8a5434c53e6b05c82457c186202c7c3dd22859a20d24f2631460295c49bb",
+            "role": "app"
+          }
+        },
+        {
+          "participants": [],
+          "type": "OpenChannel",
+          "data": {
+            "fundingStrategy": "Fake",
+            "targetChannelId": "0xa36aee36464d44b502ae09a246343f6a4e385e39d4431359ee472926d07c99c3",
+            "role": "app"
+          }
+        },
+        {
+          "participants": [],
+          "type": "OpenChannel",
+          "data": {
+            "fundingStrategy": "Fake",
+            "targetChannelId": "0xb0bb44d5ad08aedb343b91fc0eafd0ec9d7897a1cb7fcf74c73946e780b9b1fd",
+            "role": "app"
+          }
+        },
+        {
+          "participants": [],
+          "type": "OpenChannel",
+          "data": {
+            "fundingStrategy": "Fake",
+            "targetChannelId": "0xcdbcd48ac676eed076eed50f9838ddcc34d8d0548f988d0488369ff1987f0642",
+            "role": "app"
+          }
+        }
+      ]
+    }
+    headers: {
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json",
+      "user-agent": "axios/0.19.2",
+      "content-length": "21277",
+      "host": "104.238.222.165",
+      "connection": "close"
+    }
+    err: {
+      "type": "IndexerError",
+      "message": "Failed to handle state channel message",
+      "stack":
+          IndexerError: Failed to handle state channel message
+              at Object.indexerError (/home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/node_modules/@graphprotocol/indexer-common/dist/errors.js:97:12)
+              at /home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/dist/server/index.js:262:42
+              at Generator.throw (<anonymous>)
+              at rejected (/home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/dist/server/index.js:6:65)
+      "code": "IE023",
+      "explanation": "https://github.com/graphprotocol/indexer/blob/master/docs/errors.md#ie023",
+      "cause": {
+        "type": "Error",
+        "message": "Error during pushMessage",
+        "stack":
+            Error: Error during pushMessage
+                at SingleThreadedWallet.pushMessage (/home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/node_modules/@statechannels/server-wallet/lib/src/wallet/wallet.js:283:19)
+                at runMicrotasks (<anonymous>)
+                at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                at async timeAsync (/home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/node_modules/@statechannels/server-wallet/lib/src/metrics.js:58:16)
+                at async MessagePort.<anonymous> (/home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/node_modules/@statechannels/server-wallet/lib/src/wallet/multi-threaded-wallet/worker.js:36:169)
+      }
+    }
+[2020-12-26 20:34:29.000 +0000] DEBUG (IndexerService/2751 on graph-indexer.darksiders-staking.com): POST /channel-messages-inbox 500 50 - 151.242 ms
+    indexer: "0xBE9d7c691792937Ca7e2535652886ff390Cc5b86"
+    operator: "0xE35C249f495C563E42D5822985158825Eb37e61e"
+    component: "Server"
+[2020-12-26 20:34:28.998 +0000] ERROR (2751 on graph-indexer.darksiders-staking.com): Error during pushMessage
+    dbName: "mainnet_indexer1"
+    walletVersion: "@statechannels/server-wallet@1.13.1"
+    reason: "Error during pushMessage"
+    data: {
+      "thisWalletVersion": "@statechannels/server-wallet@1.13.1",
+      "payloadWalletVersion": "@statechannels/server-wallet@1.13.1",
+      "cause": {
+        "reason": "Not in channel",
+        "type": "StoreError"
+      }
+    }
+    type: "PushMessageError"
+    stack: "Error: Error during pushMessage\n    at SingleThreadedWallet.pushMessage (/home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/node_modules/@statechannels/server-wallet/lib/src/wallet/wallet.js:283:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async timeAsync (/home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/node_modules/@statechannels/server-wallet/lib/src/metrics.js:58:16)\n    at async MessagePort.<anonymous> (/home/lexprime/.nvm/versions/node/v14.9.0/lib/node_modules/@graphprotocol/indexer-service/node_modules/@statechannels/server-wallet/lib/src/wallet/multi-threaded-wallet/worker.js:36:169)"
+
